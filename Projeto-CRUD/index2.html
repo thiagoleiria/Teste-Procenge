@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD2</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div id="left-panel">
+        <h1>Sistema Escola</h1>
+        <h3>Aluno</h3>
+        <p>Nome:</p>
+        <input type="text" id="search" placeholder="Pesquisar...">
+        <button onclick="searchCursos()">Pesquisar</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>Data</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="curso-list"></tbody>
+        </table>
+    </div>
+
+    <div id="right-panel">
+        <h1>Sistema Escola</h1>
+        <h3>Aluno - incluir</h3>
+        <p>Nome:</p>
+        <form id="crud-form">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <p>Data Nascimento:</p>
+            <input type="date" id="data" required>
+            <button type="submit" id="submitButton">Incluir</button>
+            <button type="button" id="updateButton" style="display:none;">Alterar</button>
+            <button type="button" id="cancelButton" style="display:none;">Cancelar</button>
+        </form>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
